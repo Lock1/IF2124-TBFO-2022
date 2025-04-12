@@ -1,0 +1,21 @@
+cabal-version:      3.4
+
+name:               if2124
+version:            0.1.0.0
+
+license:            MIT
+license-file:       LICENSE
+author:             Lock1
+maintainer:         30568743+Lock1@users.noreply.github.com
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+executable if2124
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.18.2.1
+    hs-source-dirs:   src
+    default-language: GHC2021
